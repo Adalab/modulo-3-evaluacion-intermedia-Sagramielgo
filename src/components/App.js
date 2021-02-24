@@ -5,10 +5,21 @@ import React, { useState } from 'react';
 
 function App() {
   const [state] = useState(data);
+  const [colorData, setColor] = useState('');
+  function handleShowColor() {
+    setColor('bgColor');
+  }
 
+  function handleRemoveColor() {
+    setColor('');
+  }
   return (
-    <div>
-      <PokemonList pokemons={state} />
+    <div className="bgColor">
+      <PokemonList
+        pokemons={state}
+        show={handleShowColor}
+        hide={handleRemoveColor}
+      />
     </div>
   );
 }
