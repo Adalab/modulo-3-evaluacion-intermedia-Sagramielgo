@@ -9,13 +9,17 @@ function Pokemon(props) {
   }
 
   const typesList = props.types.map((type, index) => {
-    return <li key={index}>{type}</li>;
+    return (
+      <li key={index} className="pokeCard__types--type">
+        {type}
+      </li>
+    );
   });
   return (
     <article className={`pokeCard ${card}`} onClick={handleFav}>
-      <h2>{props.name}</h2>
-      <img src={props.img} alt={props.name} />
-      <ul>{typesList}</ul>
+      <h2 className="pokeCard__name">{props.name}</h2>
+      <img className="pokeCard__image" src={props.img} alt={props.name} />
+      <ul className="pokeCard__types">{typesList}</ul>
     </article>
   );
 }
