@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
 import '../stylesSheet/App.scss';
 import data from '../data/data.json';
 import PokemonList from './PokemonList.js';
+import React, { useState } from 'react';
 
-class App extends Component {
-  /*  state = { data }; */
-  render() {
-    console.log(data);
-    return (
-      <div>
-        <PokemonList pokemons={data} />
-      </div>
-    );
-  }
+function App() {
+  const [state] = useState(data);
+
+  return (
+    <div>
+      <PokemonList pokemons={state} />
+    </div>
+  );
 }
 
 export default App;
