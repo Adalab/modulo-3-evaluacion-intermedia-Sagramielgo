@@ -3,13 +3,13 @@ import '../stylesSheet/PokemonList.scss';
 import React, { useState } from 'react';
 
 function PokemonList(props) {
-  const [choose, setFav] = useState('');
+  const [choose, setFav] = useState('Who is your favourite pokemon?');
 
   const handleChoose = () => {
-    props.show(setFav('HAZ CLICK EN TU FAVORITO'));
+    props.getShowColor(setFav('HAZ CLICK EN TU FAVORITO'));
   };
   const handleRemove = () => {
-    props.hide(setFav(''));
+    props.getHideColor(setFav('Who is your favourite pokemon?'));
   };
   const pokeList = props.pokemons.map((pokemon) => {
     return (
@@ -26,7 +26,7 @@ function PokemonList(props) {
   });
   return (
     <>
-      <h1>{`Who's your favourite pokemon? ${choose}`}</h1>
+      <h1 className="title">{`${choose}`}</h1>
       <ul className="listContainer">{pokeList}</ul>
     </>
   );

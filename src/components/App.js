@@ -14,11 +14,11 @@ function App() {
     setColor('');
   }
   return (
-    <div className={colorData}>
+    <div className={`container ${colorData}`}>
       <PokemonList
-        show={handleShowColor}
-        hide={handleRemoveColor}
         pokemons={state}
+        getShowColor={handleShowColor}
+        getHideColor={handleRemoveColor}
       />
     </div>
   );
