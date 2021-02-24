@@ -9,7 +9,12 @@ function PokemonList(props) {
       </li>
     );
   });
-  return <ul className="listContainer">{pokeList}</ul>;
+  return (
+    <>
+      <h1>Who's your favourite pokemon?</h1>
+      <ul className="listContainer">{pokeList}</ul>
+    </>
+  );
 }
 
 export default PokemonList;

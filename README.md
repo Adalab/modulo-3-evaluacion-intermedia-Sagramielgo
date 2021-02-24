@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+Sagra Mielgo Módulo 3 Evaluación Intermedia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El ejercicio consiste en realizar lo que se solicita en un enunciado dado poniendo en práctica los conocimientos de React adquiridos durante este módulo.
+Partimos de una plantilla de React que primero he descargado y después de npm install deberemos ejecutar en la terminal npm start para visionar el estado del ejercicio en la web.
 
-## Available Scripts
+Podemos modificar dicha plantilla para que se acomode a nuestras necesidades.
+Para ello he creado primero una estructura de carpetas para guardar de forma ordenada los archivos:
+Carpeta componentes para javascript; carpeta styleSheet para archivos scss y carpeta de data para contenido dado en el enunciado, en este caso un array de datos; he actualizado también el archivo package json para que al crear la carpeta de producción no sea necesario ejecutar npm build, si no que con npm docs crea automáticamente una carpeta con este nombre, docs, necesaria para publicar en gitHub pages.
 
-In the project directory, you can run:
+Después he realizado una estructura de 3 componentes de javascript con código escrito en JSX, cuya sintaxis es similar a HTML pero en este caso se escribe en archivos de js.
+He preferido utilizar componentes funcionales; la sintaxis no es tan compleja como en los componentes de clase.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A continuación he aplicado un Hook para la elección de favorita cambiando el color de fondo y un lifing con dos funciones manejadoras que añaden el mensaje "ELIGE"
+Finalmente he añadido estilos en scss, también en diferentes archivos que se corresponden con los 3 componentes de js, a los que he nombrado del mismo modo para que se asocien facilmente y sean migrables en código conjunto, cada componente js con su archivo scss correspondiente.
