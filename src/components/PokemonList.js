@@ -5,12 +5,12 @@ import React, { useState } from 'react';
 function PokemonList(props) {
   const [choose, setFav] = useState('');
 
-  function handleChoose() {
-    props.show('HAZ CLICK EN TU FAVORITO');
-  }
-  function handleRemove() {
-    props.hide('');
-  }
+  const handleChoose = () => {
+    props.show(setFav('HAZ CLICK EN TU FAVORITO'));
+  };
+  const handleRemove = () => {
+    props.hide(setFav(''));
+  };
   const pokeList = props.pokemons.map((pokemon) => {
     return (
       <li key={pokemon.id}>
