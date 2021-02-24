@@ -1,4 +1,5 @@
 import Pokemon from './Pokemon.js';
+import '../stylesSheet/PokemonList.scss';
 
 function PokemonList(props) {
   const pokeList = props.pokemons.map((pokemon) => {
@@ -8,7 +9,7 @@ function PokemonList(props) {
       </li>
     );
   });
-  return <ul>{pokeList}</ul>;
+  return <ul className="listContainer">{pokeList}</ul>;
 }
 
 export default PokemonList;

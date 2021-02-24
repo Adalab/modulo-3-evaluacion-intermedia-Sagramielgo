@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     console.log(data);
     return (
-      <div className="App">
+      <div>
         <PokemonList pokemons={data} />
       </div>
     );
