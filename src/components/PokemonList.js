@@ -6,10 +6,10 @@ function PokemonList(props) {
   const [choose, setFav] = useState('');
 
   function handleChoose() {
-    setFav('HAZ CLICK EN TU FAVORITO');
+    props.show('HAZ CLICK EN TU FAVORITO');
   }
   function handleRemove() {
-    setFav('');
+    props.hide('');
   }
   const pokeList = props.pokemons.map((pokemon) => {
     return (

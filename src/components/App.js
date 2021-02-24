@@ -14,11 +14,11 @@ function App() {
     setColor('');
   }
   return (
-    <div className="bgColor">
+    <div className={colorData}>
       <PokemonList
-        pokemons={state}
         show={handleShowColor}
         hide={handleRemoveColor}
+        pokemons={state}
       />
     </div>
   );
