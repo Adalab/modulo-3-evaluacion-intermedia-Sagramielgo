@@ -4,9 +4,11 @@
   background-color: rgb(236, 213, 217);
 }
 .bgColor {
+  transition: all ease 0.5s;
   background-color: rgb(230, 89, 166);
 }
 .container {
   margin: 30px 200px;
   border-radius: 30px;
+  padding-bottom: 30px;
 }
