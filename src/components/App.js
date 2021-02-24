@@ -4,7 +4,7 @@ import data from '../data/data.json';
 import PokemonList from './PokemonList.js';
 
 class App extends Component {
-  state = { data };
+  /*  state = { data }; */
   render() {
     console.log(data);
     return (
