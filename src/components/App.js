@@ -5,13 +5,13 @@ import React, { useState } from 'react';
 
 function App() {
   const [state] = useState(data);
-  const [colorData, setColor] = useState('');
+  const [colorData, setColorData] = useState('');
   function handleShowColor() {
-    setColor('bgColor');
+    setColorData('bgColor');
   }
 
   function handleRemoveColor() {
-    setColor('');
+    setColorData('');
   }
   return (
     <div className={`container ${colorData}`}>
