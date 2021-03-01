@@ -6,8 +6,7 @@ function Pokemon(props) {
   /* select favourites */
   const [card, setCard] = useState('');
   function handleFav() {
-    if (!card) setCard('blue');
-    else setCard('');
+    !card ? setCard('blue') : setCard('');
   }
 
   const typesList = props.types.map((type, index) => {
