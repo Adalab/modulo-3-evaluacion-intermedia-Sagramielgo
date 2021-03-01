@@ -1,5 +1,6 @@
 import '../stylesSheet/Pokemon.scss';
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 function Pokemon(props) {
   /* select favourites */
@@ -35,4 +36,10 @@ function Pokemon(props) {
     </article>
   );
 }
+Pokemon.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  type: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 export default Pokemon;

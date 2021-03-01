@@ -1,6 +1,7 @@
 import Pokemon from './Pokemon.js';
 import '../stylesSheet/PokemonList.scss';
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 function PokemonList(props) {
   const [choose, setChoose] = useState('Who is your favourite pokemon?');
@@ -36,5 +37,7 @@ function PokemonList(props) {
     </>
   );
 }
-
+PokemonList.propTypes = {
+  Pokemons: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 export default PokemonList;

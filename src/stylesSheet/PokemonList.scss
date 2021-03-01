@@ -5,14 +5,14 @@
 }
 
 .title {
-  padding: 20px;
+  padding: 40px;
   text-align: center;
 }
 
 .listContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
 }
 .white {
