@@ -38,6 +38,6 @@ function PokemonList(props) {
   );
 }
 PokemonList.propTypes = {
-  Pokemons: PropTypes.arrayOf(PropTypes.object).isRequired,
+  Pokemons: PropTypes.object,
 };
 export default PokemonList;

@@ -36,9 +36,9 @@ function Pokemon(props) {
   );
 }
 Pokemon.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.number,
   name: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  type: PropTypes.arrayOf(PropTypes.string).isRequired,
+  url: PropTypes.string,
+  type: PropTypes.arrayOf(PropTypes.string),
 };
 export default Pokemon;
