@@ -1,7 +1,8 @@
-Sagra Mielgo Módulo 3 Evaluación Intermedia
+## Poke Ract Sagra Mielgo #gitfuntastic
 
-El ejercicio consiste en realizar lo que se solicita en un enunciado dado poniendo en práctica los conocimientos de React adquiridos durante este módulo.
-Partimos de una plantilla de React que primero he descargado y después de npm install deberemos ejecutar en la terminal npm start para visionar el estado del ejercicio en la web.
+Ejercicio sencillo de React con los personajes de Pokemon.
+
+Partimos de una plantilla de React que primero he descargado y después de hacer `npm install` deberemos ejecutar en la terminal `npm start` para visionar el estado del ejercicio en la web.
 
 Podemos modificar dicha plantilla para que se acomode a nuestras necesidades.
 Para ello he creado primero una estructura de carpetas para guardar de forma ordenada los archivos:
@@ -12,3 +13,5 @@ He preferido utilizar componentes funcionales; la sintaxis no es tan compleja co
 
 A continuación he aplicado un Hook para la elección de favorita cambiando el color de fondo y un lifing con dos funciones manejadoras que añaden el mensaje "ELIGE"
 Finalmente he añadido estilos en scss, también en diferentes archivos que se corresponden con los 3 componentes de js, a los que he nombrado del mismo modo para que se asocien facilmente y sean migrables en código conjunto, cada componente js con su archivo scss correspondiente.
+
+Más sobre mí, [AQUÍ](https://github.com/Sagramielgo)
