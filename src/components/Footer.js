@@ -1,17 +1,17 @@
 //styles
-/* import '../stylesSheets/Footer.scss'; */
+import '../stylesSheet/Footer.scss';
 
 //FUNCTIONAL COMPONENT
 const Footer = () => {
   return (
-    <section className="Footer">
+    <section className="footer">
       <a
-        className=""
+        className="footer_link"
         href="https://github.com/Sagramielgo"
         target="_blank"
         rel="noreferrer"
       >
-        <h5 className="copy animate__animated animate__headShake animate__infinite">
+        <h5 className="copy">
           By #Git Funtastic &nbsp;
           <span>
             <i className="fas fa-paw "></i>
