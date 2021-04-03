@@ -1,4 +1,4 @@
-## Poke Ract Sagra Mielgo #gitfuntastic
+## Poke React Sagra Mielgo #gitFuntastic
 
 Ejercicio sencillo de React con los personajes de Pokemon.
 
