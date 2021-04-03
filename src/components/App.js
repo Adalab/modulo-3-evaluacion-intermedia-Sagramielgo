@@ -1,6 +1,7 @@
 import '../stylesSheet/App.scss';
 import data from '../data/data.json';
 import PokemonList from './PokemonList.js';
+import Footer from './Footer.js';
 import React, { useState } from 'react';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         getShowColor={handleShowColor}
         getHideColor={handleRemoveColor}
       />
+      <Footer />
     </div>
   );
 }
